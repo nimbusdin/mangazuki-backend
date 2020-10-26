@@ -125,5 +125,5 @@ POST http://172.17.0.2:5000/api/news
     "id": 1,
     "subheading": "this is a news post"
 }
-
+```
 Again, the id field is not necessary.
