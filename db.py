@@ -23,7 +23,7 @@ def create_table(conn, create_table_sql):
         print(e)
 
 def insert_data(conn, data):
-    sql = """ INSERT INTO series(author, title, link, summary, content, updated, trending)
+    sql = """ INSERT INTO series(author, title, link, summary, content, date, trending)
               VALUES(?,?,?,?,?,?,?)"""
     cur = conn.cursor()
     i = 0
@@ -70,7 +70,7 @@ if __name__ == '__main__':
                             link text NOT NULL,
                             summary text,
                             content text,
-                            updated text NOT NULL,
+                            date text NOT NULL,
                             trending text
     );"""
 

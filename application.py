@@ -24,7 +24,7 @@ class models:
         link = db.Column(db.Text)
         summary = db.Column(db.Text)
         content = db.Column(db.Text)
-        updated = db.Column(db.DateTime)
+        date = db.Column(db.DateTime)
         trending = db.Column(db.Text)
 
         def __repr__(self):
