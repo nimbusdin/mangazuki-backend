@@ -35,7 +35,7 @@ Once the image has been downloaded, you can run the image with the following com
 
 The API should run on the following IP address:
 
-```http://172.17.0.2:5000/```
+http://172.17.0.2:5000/
 
 The following endpoints are available:
 api/series
@@ -44,14 +44,11 @@ latest/news
 
 ### GET - The latest releases
 
-We can get the latest releases by visiting the `series` endpoint `http://172.17.0.2:5000/api/series`.
+We can get the latest releases by visiting the `series` endpoint http://172.17.0.2:5000/api/series
 
-We can also index into each individual release `http://172.17.0.2:5000/api/series/1'
+We can also index into each individual release http://172.17.0.2:5000/api/series/1
 
 We can search through these releases using the following filters:
 
-```http://172.17.0.2:5000/api/series?q={"filters":[{"name":"title","op":"like","val":"%president%"}]}```
-
-
-
+http://172.17.0.2:5000/api/series?q={"filters":[{"name":"title","op":"like","val":"%president%"}]}
 
